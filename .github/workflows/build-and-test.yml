@@ -1,30 +1,16 @@
-# Define the trigger for our workflow
 on: push
-# Define the Jobs we want to run as part of this Workflow
 jobs: 
-  # Define our build and test Job
   build-and-test: 
-    # We want to run this Job on an Ubuntu VM 
     runs-on: ubuntu-latest
-    # Define the Steps to run as part of this Job
     steps:
-    # Checkout the repository code using V1 of the standard checkout Action
     - uses: actions/checkout@v1 
-    # Use the standard Java Action to setup Java 
     - uses: actions/setup-java@v1
       with:
-      	# we want the latest Java 12
         java-version: '12.x'
-    # Use the community Action to install Flutter
     - uses: subosito/flutter-action@v1
       with:
-      	# we want the stable channel
         channel: 'stable'  
-    # Get flutter packages
     - run: flutter pub get
-    # Build :D 
     - run: flutter build aot
-    # Analyze our Dart code
     - run: flutter analyze
-    # Run our tests
     - run: flutter test

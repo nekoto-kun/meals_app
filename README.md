@@ -1,6 +1,7 @@
 # meals_app
 
 ![.github/workflows/build-and-test.yml](https://github.com/nekoto-kun/meals_app/workflows/.github/workflows/build-and-test.yml/badge.svg)
+[![Codemagic build status](https://api.codemagic.io/apps/5e3d186ba67362001e613196/5e3d186ba67362001e613195/status_badge.svg)](https://codemagic.io/apps/5e3d186ba67362001e613196/5e3d186ba67362001e613195/latest_build)
 
 A new Flutter project.
 

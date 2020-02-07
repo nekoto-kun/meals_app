@@ -1,5 +1,7 @@
 # meals_app
 
+![.github/workflows/build-and-test.yml](https://github.com/nekoto-kun/meals_app/workflows/.github/workflows/build-and-test.yml/badge.svg)
+
 A new Flutter project.
 
 ## Getting Started
